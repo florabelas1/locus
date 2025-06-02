@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2196f3">
+  <title>MeuCOS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="container">
+    <h1>MeuCOS</h1>
+    
+    <div class="add-reminder">
+      <input type="text" id="reminder-text" placeholder="Lembre-me de...">
+      <input type="time" id="reminder-time">
+      <button id="add-btn">Adicionar</button>
+    </div>
+    
+    <div class="reminders-list">
+      <h2>Lembretes Ativos</h2>
+      <ul id="reminders"></ul>
+    </div>
+    
+    <div class="stats-minimal">
+      <h2>Insights</h2>
+      <p id="completion-rate">Aguardando dados suficientes...</p>
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+  <script src="sw-register.js"></script>
+</body>
+</html>
